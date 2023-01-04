@@ -1,0 +1,11 @@
+<h1>Editing friend</h1>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div class="text-center">
+  <%= link_to "Show this friend", @friend, class: "btn btn-secondary" %> 
+  <%= link_to 'Delete', @friend, class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: 'Are you sure you want to delete your friend?'}  %>
+  <%= link_to "Back to friends", friends_path, class: "btn btn-secondary" %>
+</div>
